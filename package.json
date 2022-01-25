@@ -1,0 +1,23 @@
+{
+  "name": "preact-playground",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build:lib": "tsc && vite build",
+    "build:types": "tsup lib/index.ts --dts-only",
+    "build": "yarn build:lib && yarn build:types && ./addStylesImport.sh",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "preact": "^10.5.15",
+    "preact-custom-element": "^4.2.1"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.1.5",
+    "@types/node": "^17.0.12",
+    "@types/preact-custom-element": "^4.0.1",
+    "tsup": "^5.11.11",
+    "typescript": "^4.4.4",
+    "vite": "^2.7.2"
+  }
+}
